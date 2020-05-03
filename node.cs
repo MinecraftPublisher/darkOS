@@ -52,11 +52,10 @@ namespace Swapcoin_Node
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.Miner = new System.Windows.Forms.Timer(this.components);
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -85,15 +84,14 @@ namespace Swapcoin_Node
             this.label2.TabIndex = 2;
             this.label2.Text = "2020 (C) Swapcoin Node";
             // 
-            // pictureBox2
+            // button1
             // 
-            this.pictureBox2.Location = new System.Drawing.Point(260, 52);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(46, 47);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 3;
-            this.pictureBox2.TabStop = false;
-            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
+            this.button1.Location = new System.Drawing.Point(261, 57);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(45, 47);
+            this.button1.TabIndex = 5;
+            this.button1.Text = "Start";
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // Miner
             // 

@@ -91,6 +91,7 @@ namespace Swapcoin_Node
             this.button1.Size = new System.Drawing.Size(45, 47);
             this.button1.TabIndex = 5;
             this.button1.Text = "Start";
+            this.button1.Click+=new System.EventHandler(this.pictureBox2_Click);
             this.button1.UseVisualStyleBackColor = true;
             // 
             // Miner

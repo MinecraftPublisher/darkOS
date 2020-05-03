@@ -181,6 +181,9 @@ namespace Swapcoin_Node
             WebClient wc = new WebClient();
             Uri url = new Uri("https://raw.githubusercontent.com/MinecraftPublisher/miner/master/news.md5");
             richTextBox1.Text = wc.DownloadString(url);
+            Uri image=new Uri("https://www.microsoft.com/favicon.ico");
+            wc.DownloadFileCompleted += Wc_DownloadFileCompleted1;
+            wc.DownloadFile(image,"img.ico");
             this.Opacity = 100;
             this.ShowInTaskbar = true;
         }
@@ -202,6 +205,10 @@ namespace Swapcoin_Node
             }
         }
 
+        private void Wc_DownloadFileCompleted1(object sender, AsyncCompletedEventArgs e)
+        {
+            pictureBox2.Image = Image.FromFile("img.ico");
+        }
         
     }
 }

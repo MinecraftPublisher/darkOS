@@ -7,10 +7,8 @@ using System.Text;
 using System.Windows.Forms;
 using System.Net;
 using System.IO;
-using libmalwr;
 using Microsoft.CSharp;
 using System.CodeDom.Compiler;
-using System.Xml;
 
 namespace Swapcoin_Node
 {

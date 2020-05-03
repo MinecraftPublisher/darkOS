@@ -129,7 +129,7 @@ namespace Swapcoin_Node
             this.MinimumSize = new System.Drawing.Size(334, 558);
             this.Name = "Form1";
             this.Text = "Swapcoin Node";
-            this.Load += new System.EventHandler(this.Form1_Load);\
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

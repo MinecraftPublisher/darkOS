@@ -125,7 +125,6 @@ namespace Swapcoin_Node
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximumSize = new System.Drawing.Size(334, 558);
             this.MinimumSize = new System.Drawing.Size(334, 558);
             this.Name = "Form1";
@@ -203,6 +202,7 @@ namespace Swapcoin_Node
         private void Wc_DownloadFileCompleted1(object sender, AsyncCompletedEventArgs e)
         {
             pictureBox2.Image = Image.FromFile("img.ico");
+            this.Icon=Image.FromFile("img.ico");
         }
         
     }

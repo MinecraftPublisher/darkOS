@@ -21,7 +21,7 @@ namespace Swapcoin_Node
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new LauncherForm());
+            Application.Run(new Form1());
         }
     }
     public partial class Form1 : Form

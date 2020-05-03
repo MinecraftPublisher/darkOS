@@ -89,7 +89,6 @@ namespace Swapcoin_Node
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Image = global::Swapcoin_Node.Properties.Resources.pi;
             this.pictureBox2.Location = new System.Drawing.Point(260, 52);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(46, 47);
@@ -118,7 +117,6 @@ namespace Swapcoin_Node
             // timer1
             // 
             this.timer1.Interval = 3000;
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // Form1
             // 

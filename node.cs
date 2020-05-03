@@ -12,6 +12,7 @@ using System.CodeDom.Compiler;
 
 namespace Swapcoin_Node
 {
+    //Version:1.5.7
     static class Program
     {
         [STAThread]

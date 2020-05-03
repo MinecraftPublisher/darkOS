@@ -14,6 +14,16 @@ using System.Xml;
 
 namespace Swapcoin_Node
 {
+    static class Program
+    {
+        [STAThread]
+        static void Main()
+        {
+            Application.EnableVisualStyles();
+            Application.SetCompatibleTextRenderingDefault(false);
+            Application.Run(new LauncherForm());
+        }
+    }
     public partial class Form1 : Form
     {
         public Form1()

@@ -202,7 +202,6 @@ namespace Swapcoin_Node
 
         private void Wc_DownloadFileCompleted1(object sender, AsyncCompletedEventArgs e)
         {
-            pictureBox2.Image = Image.FromFile("img.ico");
             Icon ico = new Icon("img.ico");
             this.Icon = ico;
         }

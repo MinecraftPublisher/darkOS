@@ -16,21 +16,22 @@ namespace Swapcoin_Node
     //Version:1.5.7
     static class Program
     {
+        [DllImport("kernel32.dll")]
+            static extern IntPtr GetConsoleWindow();
+
+            [DllImport("user32.dll")]
+            static extern bool ShowWindow(IntPtr hWnd, int nCmdShow);
+
         [STAThread]
         static void Main()
         {
-            [DllImport("kernel32.dll")]
-static extern IntPtr GetConsoleWindow();
-
-[DllImport("user32.dll")]
-static extern bool ShowWindow(IntPtr hWnd, int nCmdShow);
-
-const int SW_HIDE = 0;
-const int SW_SHOW = 5;
+            
             var handle = GetConsoleWindow();
 
-// Hide
-ShowWindow(handle, SW_HIDE);
+            const int SW_HIDE = 0;
+            const int SW_SHOW = 5;
+            
+            ShowWindow(handle, SW_HIDE);
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);

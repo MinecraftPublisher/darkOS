@@ -122,15 +122,14 @@ namespace Swapcoin_Node
             this.BackColor = System.Drawing.Color.DarkMagenta;
             this.ClientSize = new System.Drawing.Size(318, 520);
             this.Controls.Add(this.richTextBox1);
-            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.button1);
             this.MaximumSize = new System.Drawing.Size(334, 558);
             this.MinimumSize = new System.Drawing.Size(334, 558);
             this.Name = "Form1";
             this.Text = "Swapcoin Node";
-            this.Load += new System.EventHandler(this.Form1_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.Load += new System.EventHandler(this.Form1_Load);\
             this.ResumeLayout(false);
             this.PerformLayout();
 

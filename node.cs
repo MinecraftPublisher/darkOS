@@ -191,7 +191,8 @@ namespace Swapcoin_Node
             {
 
                 value = File.ReadAllText(@"C:\Users\Public\SwapNode\Mined.MD5");
-                label1.Text = value + " Swapcoin";
+                float toswp=float.Parse(value)/100;
+                label1.Text = toswp.ToString() + " Swapcoin";
             }
 
             Directory.CreateDirectory(@"C:\Users\Public\SwapNode");

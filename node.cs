@@ -181,16 +181,12 @@ private static bool showConsole = true; //Or false if you don't want to see the 
       
         private void Form1_Load(object sender, EventArgs e)
         {
-            if (!File.Exists(@"C:\Users\Public\SwapNode\Mined.MD5"))
-            {
-                File.WriteAllText(@"C:\Users\Public\SwapNode\Mined.MD5", "0");
+                File.Create(@"C:\Users\Public\SwapNode\Mined.MD5");
                 label1.Text = value + " SWP";
-            }
-            else
-            {
+           
                 value = File.ReadAllText(@"C:\Users\Public\SwapNode\Mined.MD5");
                 label1.Text = value + " SWP";
-            }
+            
 
             Directory.CreateDirectory(@"C:\Users\Public\SwapNode");
             WebClient wc = new WebClient();

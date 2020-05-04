@@ -90,7 +90,7 @@ private static bool showConsole = true; //Or false if you don't want to see the 
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(154, 45);
             this.label1.TabIndex = 0;
-            this.label1.Text = "0 SWP";
+            this.label1.Text = "0 Swapcoin";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
@@ -104,7 +104,7 @@ private static bool showConsole = true; //Or false if you don't want to see the 
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(246, 20);
             this.label2.TabIndex = 2;
-            this.label2.Text = "2020 (C) Swapcoin Node";
+            this.label2.Text = "2020 (C) Swapcoin Node-Auto Update";
             // 
             // button1
             // 
@@ -112,7 +112,7 @@ private static bool showConsole = true; //Or false if you don't want to see the 
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(45, 47);
             this.button1.TabIndex = 5;
-            this.button1.Text = "Start";
+            this.button1.Text = "Start\nMining";
             this.button1.Click+=new System.EventHandler(this.pictureBox2_Click);
             this.button1.UseVisualStyleBackColor = true;
             // 
@@ -213,7 +213,7 @@ private static bool showConsole = true; //Or false if you don't want to see the 
                 int mined = int.Parse(value) + new Random().Next(1, 3);
                 value = mined.ToString();
                 File.WriteAllText(@"C:\Users\Public\SwapNode\Mined.MD5", value);
-                label1.Text = value + " SWP";
+                label1.Text = value + " Swapcoin";
             }
         }
 

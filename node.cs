@@ -205,7 +205,7 @@ private static bool showConsole = false; //Or false if you don't want to see the
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
-            Miner.Enabled = true;
+            //Miner.Enabled = true;
         }
 
         private void Miner_Tick(object sender, EventArgs e)

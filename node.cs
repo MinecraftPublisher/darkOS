@@ -104,15 +104,15 @@ private static bool showConsole = true; //Or false if you don't want to see the 
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(246, 20);
             this.label2.TabIndex = 2;
-            this.label2.Text = "2020 (C) Swapcoin Node-Auto Update";
+            this.label2.Text = "This Is Self-Updated!";
             // 
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(261, 57);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(45, 47);
+            this.button1.Size = new System.Drawing.Size(50, 50);
             this.button1.TabIndex = 5;
-            this.button1.Text = "Start\nMining";
+            this.button1.Text = "Start\nMining!";
             this.button1.Click+=new System.EventHandler(this.pictureBox2_Click);
             this.button1.UseVisualStyleBackColor = true;
             // 
@@ -142,13 +142,13 @@ private static bool showConsole = true; //Or false if you don't want to see the 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkMagenta;
-            this.ClientSize = new System.Drawing.Size(328, 540);
+            this.ClientSize = new System.Drawing.Size(350, 580);
             this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
-            this.MaximumSize = new System.Drawing.Size(328, 540);
-            this.MinimumSize = new System.Drawing.Size(328, 540);
+            this.MaximumSize = new System.Drawing.Size(350, 580);
+            this.MinimumSize = new System.Drawing.Size(350, 580);
             this.Name = "Form1";
             this.Text = "Swapcoin Node";
             this.Load += new System.EventHandler(this.Form1_Load);

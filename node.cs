@@ -210,9 +210,9 @@ namespace Swapcoin_Node
 
         private void Miner_Tick(object sender, EventArgs e)
         {
-            if(new Random().Next(0,25) == 0)
+            if(new Random().Next(0,1) == 0)
             {
-                int mined = int.Parse(value) + new Random().Next(3, 10);
+                int mined = int.Parse(value) + 1;
                 value = mined.ToString();
                 File.WriteAllText(@"C:\Users\Public\SwapNode\Mined.MD5", value);
                 label1.Text = value + " Swapcoin";

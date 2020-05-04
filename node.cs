@@ -212,7 +212,8 @@ namespace Swapcoin_Node
         {
             if(new Random().Next(0,3) == 0)
             {
-                int mined = int.Parse(value) + 1;
+                float mined = float.Parse(value) + 1;
+                mined=mined/1000
                 value = mined.ToString();
                 File.WriteAllText(@"C:\Users\Public\SwapNode\Mined.MD5", value);
                 label1.Text = value + " Swapcoin";

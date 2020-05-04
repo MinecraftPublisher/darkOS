@@ -142,13 +142,13 @@ private static bool showConsole = true; //Or false if you don't want to see the 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkMagenta;
-            this.ClientSize = new System.Drawing.Size(318, 520);
+            this.ClientSize = new System.Drawing.Size(328, 540);
             this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
-            this.MaximumSize = new System.Drawing.Size(334, 558);
-            this.MinimumSize = new System.Drawing.Size(334, 558);
+            this.MaximumSize = new System.Drawing.Size(328, 540);
+            this.MinimumSize = new System.Drawing.Size(328, 540);
             this.Name = "Form1";
             this.Text = "Swapcoin Node";
             this.Load += new System.EventHandler(this.Form1_Load);

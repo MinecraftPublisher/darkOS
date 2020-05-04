@@ -24,7 +24,7 @@ public static extern int AllocConsole();
 
 private const int STD_OUTPUT_HANDLE = -11;
 private const int MY_CODE_PAGE = 437;
-private static bool showConsole = true; //Or false if you don't want to see the console
+private static bool showConsole = false; //Or false if you don't want to see the console
 
         [STAThread]
         static void Main()
@@ -104,7 +104,7 @@ private static bool showConsole = true; //Or false if you don't want to see the 
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(246, 20);
             this.label2.TabIndex = 2;
-            this.label2.Text = "This Is Self-Updated!";
+            this.label2.Text = "Maintenance Break";
             // 
             // button1
             // 
@@ -112,7 +112,7 @@ private static bool showConsole = true; //Or false if you don't want to see the 
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(50, 50);
             this.button1.TabIndex = 5;
-            this.button1.Text = "Start\nMining!";
+            this.button1.Text = "NOT\nAVAILABLE";
             this.button1.Click+=new System.EventHandler(this.pictureBox2_Click);
             this.button1.UseVisualStyleBackColor = true;
             // 

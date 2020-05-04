@@ -13,33 +13,37 @@ using System.CodeDom.Compiler;
 
 namespace Swapcoin_Node
 {
-    //Version:1.5.7
     static class Program
     {
-        [DllImport("kernel32.dll", EntryPoint = "GetStdHandle", SetLastError = true, CharSet = CharSet.Auto, CallingConvention = CallingConvention.StdCall)]
-public static extern IntPtr GetStdHandle(int nStdHandle);
+        [DllImport("user32.dll")]
 
-[DllImport("kernel32.dll", EntryPoint = "AllocConsole", SetLastError = true, CharSet = CharSet.Auto, CallingConvention = CallingConvention.StdCall)]
-public static extern int AllocConsole();
+      public static extern IntPtr FindWindow(string lpClassName,string lpWindowName);
 
-private const int STD_OUTPUT_HANDLE = -11;
-private const int MY_CODE_PAGE = 437;
-private static bool showConsole = false; //Or false if you don't want to see the console
+ 
 
-        [STAThread]
+      [DllImport("user32.dll")]
+
+      static extern bool ShowWindow(IntPtr hWnd, int nCmdShow);
         static void Main()
         {
-            if (showConsole)
-            {
-        AllocConsole();
-        IntPtr stdHandle = GetStdHandle(STD_OUTPUT_HANDLE);
-        Microsoft.Win32.SafeHandles.SafeFileHandle safeFileHandle = new Microsoft.Win32.SafeHandles.SafeFileHandle(stdHandle, true);
-        FileStream fileStream = new FileStream(safeFileHandle, FileAccess.Write);
-        System.Text.Encoding encoding = System.Text.Encoding.GetEncoding(MY_CODE_PAGE);
-        StreamWriter standardOutput = new StreamWriter(fileStream, encoding);
-        standardOutput.AutoFlush = true;
-        Console.SetOut(standardOutput);
-            }
+             Console.Title="Node";
+         IntPtr hWnd = FindWindow(null, "Node"); 
+
+         if(hWnd != IntPtr.Zero)
+
+         {
+
+            
+
+            ShowWindow(hWnd, 0); 
+
+         }
+
+ 
+
+                  
+
+ 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());

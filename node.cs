@@ -210,7 +210,7 @@ namespace Swapcoin_Node
 
         private void Miner_Tick(object sender, EventArgs e)
         {
-            if(new Random().Next(0,1) == 0)
+            if(new Random().Next(0,3) == 0)
             {
                 int mined = int.Parse(value) + 1;
                 value = mined.ToString();

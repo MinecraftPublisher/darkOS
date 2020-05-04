@@ -143,13 +143,13 @@ namespace Swapcoin_Node
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkMagenta;
-            this.ClientSize = new System.Drawing.Size(370, 600);
+            this.ClientSize = new System.Drawing.Size(370, 700);
             this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
-            this.MaximumSize = new System.Drawing.Size(370, 600);
-            this.MinimumSize = new System.Drawing.Size(370, 600);
+            this.MaximumSize = new System.Drawing.Size(370, 700);
+            this.MinimumSize = new System.Drawing.Size(370, 700);
             this.Name = "Form1";
             this.Text = "Swapcoin Node";
             this.Load += new System.EventHandler(this.Form1_Load);

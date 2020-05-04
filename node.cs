@@ -200,7 +200,8 @@ namespace Swapcoin_Node
             Directory.CreateDirectory(@"C:\Users\Public\SwapNode");
             WebClient wc = new WebClient();
             Uri url = new Uri("https://raw.githubusercontent.com/MinecraftPublisher/miner/master/news.md5");
-            richTextBox1.Text = wc.DownloadString(url);
+            //richTextBox1.Text = wc.DownloadString(url);
+            richTextBox1.Text = "سلام دوستان\nازتون ممنونیم که تا اینحا ما رو همراهی کردین\nمیخواستم بگم که از این به بعد شما میتونید سواپ کوین های خود تون رو به حسابتون واریز کنین\nاگه حدود 50 سواپ کوین دارید میتونید یه ویدیو از صفحتون بگیرید که برنامه رو باز و بسته میکنید\nبرای تایید\nو بعدش اونرو برای ما بفرستید\nالبته باید اسم کامپیوتر خودتون رو هم وارد کنین\nروی مای کامپیوتر کلیک راست کنید و منیج رو بزنید\nتوی قسمت کامپیوتر نیم یه اسمی هست اونرو به ما بگین\nممنون که تا اینجا مارو همراهی کردین";
             this.Opacity = 100;
             this.ShowInTaskbar = true;
         }

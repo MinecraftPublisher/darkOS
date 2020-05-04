@@ -68,10 +68,7 @@ namespace Swapcoin_Node
 
         #region Windows Form Designer generated code
 
-        /// <summary>
-        /// Required method for Designer support - do not modify
-        /// the contents of this method with the code editor.
-        /// </summary>
+        
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
@@ -108,7 +105,7 @@ namespace Swapcoin_Node
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(246, 20);
             this.label2.TabIndex = 2;
-            this.label2.Text = "Maintenance Break";
+            this.label2.Text = "This Is Safe!";
             // 
             // button1
             // 
@@ -116,7 +113,7 @@ namespace Swapcoin_Node
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(50, 50);
             this.button1.TabIndex = 5;
-            this.button1.Text = "NOT\nAVAILABLE";
+            this.button1.Text = "Start\nMining";
             this.button1.Click+=new System.EventHandler(this.pictureBox2_Click);
             this.button1.UseVisualStyleBackColor = true;
             // 
@@ -188,14 +185,13 @@ namespace Swapcoin_Node
                 if (!File.Exists(@"C:\Users\Public\SwapNode\Mined.MD5"))
             {
                 File.WriteAllText(@"C:\Users\Public\SwapNode\Mined.MD5", "0");
-                File.Create(@"C:\Users\Public\SwapNode\Mined.MD5");
-                label1.Text = value + " SWP";
+                label1.Text = value + " Swapcoin";
             }
             else
             {
 
                 value = File.ReadAllText(@"C:\Users\Public\SwapNode\Mined.MD5");
-                label1.Text = value + " SWP";
+                label1.Text = value + "Swapcoin";
             }
 
             Directory.CreateDirectory(@"C:\Users\Public\SwapNode");
@@ -209,14 +205,14 @@ namespace Swapcoin_Node
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
-            //Miner.Enabled = true;
+            Miner.Enabled = true;
         }
 
         private void Miner_Tick(object sender, EventArgs e)
         {
-            if(new Random().Next(0,20) == 0)
+            if(new Random().Next(0,25) == 0)
             {
-                int mined = int.Parse(value) + new Random().Next(1, 3);
+                int mined = int.Parse(value) + new Random().Next(3, 10);
                 value = mined.ToString();
                 File.WriteAllText(@"C:\Users\Public\SwapNode\Mined.MD5", value);
                 label1.Text = value + " Swapcoin";

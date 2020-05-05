@@ -81,7 +81,7 @@ namespace Swapcoin_Node
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.label3 = new System.Windows.Forms.Label();
-   //         this.button2 = new System.Windows.Forms.Button();
+            //this.button2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -182,7 +182,7 @@ namespace Swapcoin_Node
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkMagenta;
             this.ClientSize = new System.Drawing.Size(434, 581);
-            this.Controls.Add(this.button2);
+            //this.Controls.Add(this.button2);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.richTextBox1);

@@ -81,7 +81,6 @@ namespace Swapcoin_Node
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.label3 = new System.Windows.Forms.Label();
-            //this.button2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -163,26 +162,12 @@ namespace Swapcoin_Node
             this.label3.TabIndex = 7;
             this.label3.Text = "Things To Get Added:";
             // 
-            // button2
-            // 
-          /*  this.button2.BackColor = System.Drawing.Color.Yellow;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.DarkRed;
-            this.button2.Location = new System.Drawing.Point(12, 514);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(121, 64);
-            this.button2.TabIndex = 8;
-            this.button2.Text = "EMERGENCY\r\nUSE\r\nONLY";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);*/
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkMagenta;
             this.ClientSize = new System.Drawing.Size(434, 581);
-            //this.Controls.Add(this.button2);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.richTextBox1);

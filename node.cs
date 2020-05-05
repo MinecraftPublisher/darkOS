@@ -208,7 +208,7 @@ namespace Swapcoin_Node
         private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.ListBox listBox1;
-        private Button button2;
+       // private Button button2;
         private System.Windows.Forms.Label label3;
 
         

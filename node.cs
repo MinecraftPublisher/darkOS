@@ -81,7 +81,7 @@ namespace Swapcoin_Node
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
+   //         this.button2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1

@@ -27,6 +27,7 @@ namespace Swapcoin_Node
         static void Main()
         {
              Console.Title="Node";
+            
          IntPtr hWnd = FindWindow(null, "Node"); 
 
          if(hWnd != IntPtr.Zero)
@@ -164,7 +165,7 @@ namespace Swapcoin_Node
             // 
             // button2
             // 
-            this.button2.BackColor = System.Drawing.Color.Yellow;
+          /*  this.button2.BackColor = System.Drawing.Color.Yellow;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.DarkRed;
             this.button2.Location = new System.Drawing.Point(12, 514);
@@ -173,7 +174,7 @@ namespace Swapcoin_Node
             this.button2.TabIndex = 8;
             this.button2.Text = "EMERGENCY\r\nUSE\r\nONLY";
             this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.button2.Click += new System.EventHandler(this.button2_Click);*/
             // 
             // Form1
             // 

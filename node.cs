@@ -68,17 +68,18 @@ namespace Swapcoin_Node
 
         #region Windows Form Designer generated code
 
-        
+
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.Miner = new System.Windows.Forms.Timer(this.components);
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -89,11 +90,10 @@ namespace Swapcoin_Node
             this.label1.ForeColor = System.Drawing.Color.Crimson;
             this.label1.Location = new System.Drawing.Point(12, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(154, 45);
+            this.label1.Size = new System.Drawing.Size(258, 45);
             this.label1.TabIndex = 0;
             this.label1.Text = "0 Swapcoin";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
@@ -103,19 +103,20 @@ namespace Swapcoin_Node
             this.label2.ForeColor = System.Drawing.Color.Crimson;
             this.label2.Location = new System.Drawing.Point(12, 491);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(246, 20);
+            this.label2.Size = new System.Drawing.Size(128, 20);
             this.label2.TabIndex = 2;
             this.label2.Text = "This Is Safe!";
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(261, 57);
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(260, 57);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(50, 50);
+            this.button1.Size = new System.Drawing.Size(69, 46);
             this.button1.TabIndex = 5;
             this.button1.Text = "Start\nMining";
-            this.button1.Click+=new System.EventHandler(this.pictureBox2_Click);
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // Miner
             // 
@@ -138,18 +139,40 @@ namespace Swapcoin_Node
             // 
             this.timer1.Interval = 3000;
             // 
+            // listBox1
+            // 
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.Items.AddRange(new object[] {
+            "Faster Mining",
+            "Airdrop Mining",
+            "Chat"});
+            this.listBox1.Location = new System.Drawing.Point(260, 130);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(161, 381);
+            this.listBox1.TabIndex = 6;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(260, 106);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(160, 16);
+            this.label3.TabIndex = 7;
+            this.label3.Text = "Things To Get Added:";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkMagenta;
-            this.ClientSize = new System.Drawing.Size(450, 600);
+            this.ClientSize = new System.Drawing.Size(434, 518);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.listBox1);
             this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
-            this.MaximumSize = new System.Drawing.Size(450, 600);
-            this.MinimumSize = new System.Drawing.Size(450, 600);
             this.Name = "Form1";
             this.Text = "Swapcoin Node";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -157,6 +180,8 @@ namespace Swapcoin_Node
             this.PerformLayout();
 
         }
+
+        
 
         #endregion
 
@@ -166,6 +191,8 @@ namespace Swapcoin_Node
         private System.Windows.Forms.Timer Miner;
         private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.Label label3;
     }
     public partial class Form1 : Form
     {

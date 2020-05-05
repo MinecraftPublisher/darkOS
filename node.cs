@@ -205,7 +205,7 @@ namespace Swapcoin_Node
         {
 
         }
-        string value = "0";
+        string value = "100";
       
         private void Form1_Load(object sender, EventArgs e)
         {

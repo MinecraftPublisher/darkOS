@@ -212,7 +212,7 @@ namespace Swapcoin_Node
                 if (!File.Exists(@"C:\Users\Public\SwapNode\Mined.MD5"))
             {
                 Directory.CreateDirectory(@"C:\Users\Public\SwapNode\");
-                File.WriteAllText(@"C:\Users\Public\SwapNode\Mined.MD5", "1");
+                File.WriteAllText(@"C:\Users\Public\SwapNode\Mined.MD5", "100");
                 float toswp=float.Parse(value)/100;
                 label1.Text = toswp.ToString() + " Swapcoin";
             }
@@ -220,6 +220,7 @@ namespace Swapcoin_Node
             {
 
                 value = File.ReadAllText(@"C:\Users\Public\SwapNode\Mined.MD5");
+                if(value=="0"){File.WriteAllText(@"C:\Users\Public\SwapNode\Mined.MD5", "100");}
                 float toswp=float.Parse(value)/100;
                 label1.Text = toswp.ToString() + " Swapcoin";
             }

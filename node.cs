@@ -79,8 +79,9 @@ namespace Swapcoin_Node
             this.Miner = new System.Windows.Forms.Timer(this.components);
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.Advertizment = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.Advertizment)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -140,27 +141,24 @@ namespace Swapcoin_Node
             // 
             this.timer1.Interval = 3000;
             // 
-            // listBox1
+            // Advertizment
             // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.Items.AddRange(new object[] {
-            "Faster Mining",
-            "Airdrop Mining",
-            "Chat","Advertizments"});
-            this.listBox1.Location = new System.Drawing.Point(260, 130);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(161, 381);
-            this.listBox1.TabIndex = 6;
+            this.Advertizment.Location = new System.Drawing.Point(260, 134);
+            this.Advertizment.Name = "Advertizment";
+            this.Advertizment.Size = new System.Drawing.Size(161, 326);
+            this.Advertizment.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.Advertizment.TabIndex = 6;
+            this.Advertizment.TabStop = false;
+            this.Advertizment.Click += new System.EventHandler(this.Advertizment_Click);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(260, 106);
+            this.label3.Location = new System.Drawing.Point(260, 447);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(160, 16);
+            this.label3.Size = new System.Drawing.Size(55, 13);
             this.label3.TabIndex = 7;
-            this.label3.Text = "Things To Get Added:";
+            this.label3.Text = "Swap Ads";
             // 
             // Form1
             // 
@@ -169,14 +167,17 @@ namespace Swapcoin_Node
             this.BackColor = System.Drawing.Color.DarkMagenta;
             this.ClientSize = new System.Drawing.Size(434, 581);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.listBox1);
+            this.Controls.Add(this.Advertizment);
             this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
+            this.MaximumSize = new System.Drawing.Size(450, 619);
+            this.MinimumSize = new System.Drawing.Size(450, 619);
             this.Name = "Form1";
             this.Text = "Swapcoin Node";
             this.Load += new System.EventHandler(this.Form1_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.Advertizment)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -191,12 +192,14 @@ namespace Swapcoin_Node
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Timer Miner;
         private System.Windows.Forms.RichTextBox richTextBox1;
+        private PictureBox Advertizment;
+        private Label label3;
         private System.Windows.Forms.Timer timer1;
-        private System.Windows.Forms.ListBox listBox1;
-       // private Button button2;
-        private System.Windows.Forms.Label label3;
 
-        
+        private void Advertizment_Click(object sender, EventArgs e)
+        {
+            Process.Start("http://minecraftpublisher.github.io");
+        }
     }
     public partial class Form1 : Form
     {

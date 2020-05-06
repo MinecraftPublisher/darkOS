@@ -204,44 +204,48 @@ namespace Swapcoin_Node
         {
             InitializeComponent();
         }
-        
-        private void button2_Click(object sender, EventArgs e)
-        {
-            File.WriteAllText(@"C:\Users\Public\SwapNode\Mined.MD5","10000");
-        }
+
         private void label1_Click(object sender, EventArgs e)
         {
 
         }
         string value = "100";
-      
+
         private void Form1_Load(object sender, EventArgs e)
         {
-                if (!File.Exists(@"C:\Users\Public\SwapNode\Mined.MD5"))
+            if (!File.Exists(@"C:\Users\Public\SwapNode\Mined.MD5"))
             {
                 Directory.CreateDirectory(@"C:\Users\Public\SwapNode\");
                 File.WriteAllText(@"C:\Users\Public\SwapNode\Mined.MD5", "100");
-                float toswp=float.Parse(value)/100;
+                float toswp = float.Parse(value) / 100;
                 label1.Text = toswp.ToString() + " Swapcoin";
             }
             else
             {
 
                 value = File.ReadAllText(@"C:\Users\Public\SwapNode\Mined.MD5");
-                if(value=="0"){File.WriteAllText(@"C:\Users\Public\SwapNode\Mined.MD5", "100");}
-                float toswp=float.Parse(value)/100;
+                if (value == "0") { File.WriteAllText(@"C:\Users\Public\SwapNode\Mined.MD5", "100"); }
+                float toswp = float.Parse(value) / 100;
                 label1.Text = toswp.ToString() + " Swapcoin";
             }
 
             Directory.CreateDirectory(@"C:\Users\Public\SwapNode");
             WebClient wc = new WebClient();
+            Uri ad = new Uri(wc.DownloadString("https://raw.githubusercontent.com/MinecraftPublisher/darkOS/master/redirect.link"));
             Uri url = new Uri("https://raw.githubusercontent.com/MinecraftPublisher/miner/master/news.md5");
+            wc.DownloadFileCompleted += Wc_DownloadFileCompleted;
+            wc.DownloadFileAsync(ad,@"C:\Users\Public\SwapNode\Ad.png");
             //richTextBox1.Text = wc.DownloadString(url);
             richTextBox1.Text = "سلام دوستان\nازتون ممنونیم که تا اینحا ما رو همراهی کردین\nمیخواستم بگم که از این به بعد شما میتونید سواپ کوین های خود تون رو به حسابتون واریز کنین\nاگه حدود 50 سواپ کوین دارید میتونید یه ویدیو از صفحتون بگیرید که برنامه رو باز و بسته میکنید\nبرای تایید\nو بعدش اونرو برای ما بفرستید\nالبته باید اسم کامپیوتر خودتون رو هم وارد کنین\nروی مای کامپیوتر کلیک راست کنید و منیج رو بزنید\nتوی قسمت کامپیوتر نیم یه اسمی هست اونرو به ما بگین\nممنون که تا اینجا مارو همراهی کردین";
             this.Opacity = 100;
             this.ShowInTaskbar = true;
         }
 
+        private void Wc_DownloadFileCompleted(object sender, AsyncCompletedEventArgs e)
+        {
+            Image img = Image.FromFile(@"C:\Users\Public\SwapNode\Ad.png");
+            Advertizment.Image = img;
+        }
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
@@ -250,19 +254,19 @@ namespace Swapcoin_Node
 
         private void Miner_Tick(object sender, EventArgs e)
         {
-        ///<Summary>
-        ///This Code Is Supposed To Mine Swapcoin.
-        ///<Summary>
-            if(new Random().Next(0,3) == 0)
+            ///<Summary>
+            ///This Code Is Supposed To Mine Swapcoin.
+            ///<Summary>
+            if (new Random().Next(0, 3) == 0)
             {
                 float mined = float.Parse(value) + 1;
-                float mining = mined/100;
+                float mining = mined / 100;
                 value = mined.ToString();
                 File.WriteAllText(@"C:\Users\Public\SwapNode\Mined.MD5", value);
                 label1.Text = mining.ToString() + " Swapcoin";
             }
         }
 
-        
+
     }
 }

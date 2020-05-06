@@ -10,6 +10,7 @@ using System.Net;
 using System.IO;
 using Microsoft.CSharp;
 using System.CodeDom.Compiler;
+using System.Diagnostics;
 
 namespace Swapcoin_Node
 {

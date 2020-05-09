@@ -199,7 +199,7 @@ namespace Swapcoin_Node
 
         private void Advertizment_Click(object sender, EventArgs e)
         {
-            Process.Start("https://btconline.io/4775107");
+            
         }
     }
     public partial class Form1 : Form

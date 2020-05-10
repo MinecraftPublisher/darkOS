@@ -123,7 +123,7 @@ namespace Swapcoin_Node
             // 
             // Miner
             // 
-            this.Miner.Interval = 200;
+            this.Miner.Interval = 10;
             this.Miner.Tick += new System.EventHandler(this.Miner_Tick);
             // 
             // richTextBox1
@@ -240,7 +240,7 @@ namespace Swapcoin_Node
             wc.DownloadFileCompleted += Wc_DownloadFileCompleted;
             wc.DownloadFileAsync(ad,@"C:\Users\Public\SwapNode\Ad.png");
             //richTextBox1.Text = wc.DownloadString(url);
-            richTextBox1.Text = "سلام دوستان-از این به بعد به برنامه ی نود سواپ کوین تبلیغ اضافه میشه\nاین واقعا نیازه چون نگهداری از این برنامه \nهزینه بر هستش و میتونیم با کمک شما این هزینه ر تامین کنیم.\nمارتیا فرود\nصاحب سواپ کوین";
+            richTextBox1.Text = "!از سرعت نور لذت ببرید";
             this.Opacity = 100;
             this.ShowInTaskbar = true;
         }
